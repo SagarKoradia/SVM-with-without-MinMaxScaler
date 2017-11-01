@@ -7,7 +7,7 @@ dataframe = pd.read_csv(fn)
 dataset = dataframe.values
 X = dataset[:, 0:23].astype(float)
 Y = dataset[:, 23]
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.5, random_state=21)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.3, random_state=21)
 
 model_lin = SVC(kernel='linear', C=1, gamma=10)
 model_rbf = SVC(kernel='rbf', C=1, gamma=10)
