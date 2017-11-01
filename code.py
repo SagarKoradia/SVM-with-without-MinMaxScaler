@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-fn = r'C:\Users\DELL I5558\Desktop\Python\NSW-ER01-8.csv'
+fn = r'C:\Users\DELL I5558\Desktop\Python\ELEC5222\SVM\NSW-ER01.csv'
 dataframe = pd.read_csv(fn)
 dataset = dataframe.values
 X = dataset[:, 0:23].astype(float)
